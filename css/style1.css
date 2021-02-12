@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 html {
@@ -78,7 +79,7 @@ html {
     z-index: -1;
     opacity: 0.89;
     top: 0px;
-    left: 0px;
+     left: 0px; 
 }
 
 #home h1{
@@ -101,8 +102,43 @@ html {
 		border-color: transparent;
 	}
 }
-/* body {
+body {
 	animation: fadeInAnimation ease 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
-} */
+} 
+/* about section */
+
+#aboutPage >.column{
+    display: grid;
+    grid-template-columns:50% 1fr ;
+    justify-content: space-between;
+    background-color: white;
+    
+
+}
+
+.aboutContant .margin, p{
+ margin-bottom: 40px;
+}
+.aboutContant h2 ,.margin{
+    margin-bottom: 25px;
+}
+.aboutContant{
+    
+    padding-right: 300px;
+}
+.margin{
+    border-bottom: 1px solid #888;
+    width: 10%;
+
+}
+
+
+
+
+
+
+
+
+
