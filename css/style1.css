@@ -1,0 +1,113 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html {
+	scroll-behavior: smooth;
+}
+/* CSS variable */
+:root{
+    --navbar-height: 59px;
+}
+/* navigation bar */
+#navbar{
+    /* flex is used to move things in a row */
+    display: flex;   
+    align-items: center;
+    position: relative;
+    top: 0px;
+    justify-content: center;
+    background-color: white;
+    height: 75px;
+
+}
+#navbar ul li a{
+    color: black;
+   display: block;
+   padding: 3px 22px; 
+   text-decoration: none;
+   
+   
+}
+/* list styling in navigation bar */
+#navbar ul{
+    display: flex;
+    font: size 1.3rem;
+    
+   
+    
+    
+}
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+      z-index: -1;  
+     opacity: 0.8; 
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    
+}
+#navbar ul li a:hover{
+    color: white;
+   background-color:black;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../images/aidil-bahaman-OOz6o-85r-s-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+#home p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    
+}
+#home h1{
+    text-shadow: white;
+    font-size: 75px;
+}
+.typewriter-text {
+	padding-right: 10px;
+	color: white;
+	border-right: solid white 7px;
+	text-transform: uppercase;
+	animation: cursor 1s ease-in-out infinite;
+	font-size: 20px;
+}
+@keyframes cursor {
+	from {
+		border-color:black;
+	}
+	to {
+		border-color: transparent;
+	}
+}
+/* body {
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+} */
