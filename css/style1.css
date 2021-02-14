@@ -1,5 +1,7 @@
 /* css reset */
-*{
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,10 +20,11 @@ html {
     display: flex;   
     align-items: center;
     position: relative;
-    top: 0px;
+    top: 7px;
     justify-content: center;
     background-color: white;
-    height: 75px;
+    height: 80px;
+    
 
 }
 #navbar ul li a{
@@ -34,8 +37,10 @@ html {
 }
 /* list styling in navigation bar */
 #navbar ul{
+    
     display: flex;
-    font: size 1.3rem;
+    
+    font: size 2.3rem;
     
    
     
@@ -58,8 +63,9 @@ html {
     
 }
 #navbar ul li a:hover{
-    color: white;
-   background-color:black;
+    color: grey;
+    font-weight: 600;
+   
 }
 /* home section */
 #home{
@@ -72,13 +78,17 @@ html {
 }
 #home::before{
     content: "";
-    background: url('../images/aidil-bahaman-OOz6o-85r-s-unsplash.jpg') no-repeat center center/cover;
+    background: url('../images/aidil-bahaman-OOz6o-85r-s-unsplash.jpg') ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
     opacity: 0.89;
-    top: 0px;
+    top: 100px;
      left: 0px; 
 }
 
@@ -110,29 +120,58 @@ body {
 /* about section */
 
 #aboutPage >.column{
-    display: grid;
-    grid-template-columns:50% 1fr ;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    position: relative;
     background-color: white;
     
 
 }
 
 .aboutContant .margin, p{
- margin-bottom: 40px;
+ margin-bottom: 30px;
 }
 .aboutContant h2 ,.margin{
     margin-bottom: 25px;
 }
 .aboutContant{
-    
-    padding-right: 300px;
+    margin-left: 30px;
+    padding-right: 230px;
+   
 }
+#aboutPage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
 .margin{
     border-bottom: 1px solid #888;
     width: 10%;
 
 }
+
+.image{
+    width: 100%;
+    
+}
+#portfolio{
+      content: "";
+    background: url('../images/marriage-918864_1920.jpg') ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+     left: 0px; 
+
+}
+
+
+
 
 
 
