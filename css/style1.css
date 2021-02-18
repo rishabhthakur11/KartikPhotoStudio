@@ -135,13 +135,12 @@ body {
     margin-bottom: 25px;
 }
 .aboutContant{
-    margin-left: 30px;
-    padding-right: 230px;
+    margin-left: 350px;
+    padding-right: 23px;
    
 }
 #aboutPage{
     margin-top: 10px;
-    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -151,10 +150,11 @@ body {
 
 }
 
-.image{
-    width: 100%;
+ .imageofabout{
+    width: 200%;
+    height: 100%;
     
-}
+} 
 #portfolio{
       content: "";
     background: url('../images/marriage-918864_1920.jpg') ;
@@ -165,7 +165,6 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    
      left: 0px; 
 
 }
@@ -281,6 +280,110 @@ body {
   .sbutton.call {
     background: #00e676;
   }
+  /* book online section */
+  #bookingform >.columnb{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: white
+    
+  }
+   .imageofbook{
+    width: 100%;
+    height: 100%;
+  } 
+  .bookingformdetail .marginb, p{
+    margin-bottom: 30px;
+   }
+   .bookingformdetail h2 ,.marginb{
+       margin-bottom: 25px;
+   }
+   .bookingformdetail{
+       padding-right: 300px;
+       padding-left: 220px;
+      
+   }
+   #bookingform{
+       margin-top: 750px;
+       width: 100%;
+   }
+   .marginb{
+    border-bottom: 1px solid #888;
+    width: 30%;
+
+}
+/* contact section */
+.container{
+  margin-top: 100px;
+}
+
+.form-group {
+
+  width: 100%;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.form-group input,
+.form-group textarea {
+  width: 300%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 8px;
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+
 
 
 

@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet"> 
     <script src="js/index.js" defer></script>
+    <script src="js/form.js"></script>
 </head>
 <body>
     <nav id="navbar">
@@ -17,7 +18,7 @@
             <li class="item"><a href="#aboutPage">ABOUT</a></li>
             <li class="item"><a href="#portfolio">PORTFOLIO</a></li>
             <li class="item"><a href="">CLIENT ALBUMS</a></li>
-            <li class="item"><a href="">BOOK ONLINE</a></li>
+            <li class="item"><a href="#bookingform">BOOK ONLINE</a></li>
         </ul>
     </nav>
     <section id="home">
@@ -29,10 +30,11 @@
             ></span>
         </p>
         </section>
+        
         <div id="aboutPage">
             <div class="column">
                 <section class="image">
-                    <img src="images/20191009140007-GettyImages-1053962188.jpeg" alt="">
+                    <img class="imageofabout" src="images/lens-3114729_1920.jpg" alt="">
                 </section>
                 <section class="aboutContant">
                     <h2>About me</h2>
@@ -44,11 +46,60 @@
             </div>
         </div>
         
+        
           
         <section id="portfolio">
-           
-
+            
         </section>
+        <div id="bookingform">
+            <section class="columnb">
+                <section class="bookingformdetail">
+                    <h2>Let's talk</h2>
+                    <div class="marginb">
+                    </div>
+                    <p>500 Terry Francois St. <br> 
+
+                        San Francisco, CA 94158 <br>
+                        
+                        Tel: 123-456-7890 <br>
+                        
+                        info@mysite.com </p>
+                
+                            <div class="container">
+                              <form action="rishabhthakur046@gmail.com" method="POST" id="my-form">
+                          
+                                <div class="form-group">
+                                  <label for="firstName"> First Name</label>
+                                  <input type="text" id="firstName" name="firstName">
+                                </div>
+                          
+                                <div class="form-group">
+                                  <label for="latsName">Last Name</label>
+                                  <input type="text" id="lastName" name="lastName">
+                                </div>
+                          
+                                <div class="form-group">
+                                  <label for="email">Email</label>
+                                  <input type="email" id="email" name="email">
+                                </div>
+                          
+                                <div class="form-group">
+                                  <label for="massage">Massage</label>
+                                  <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                                </div>
+                          
+                                <button type="submit">Submit</button>
+                              </form>
+                            </div>
+                            <div id="status"></div>
+                </section>
+                <section class="imageofbooking">
+                    <img class="imageofbook" src="images/katarzyna-grabowska-N-sB8EVYfWY-unsplash.jpg" alt="">
+                </section>
+            </section>
+
+        </div>
+        
         <div class="sbuttons">
             <a href="tel: (+91) 9149262211"target="_blank" class="sbutton call" tooltip="Phone"><i class=" fas fa-phone"></i></a>
             
