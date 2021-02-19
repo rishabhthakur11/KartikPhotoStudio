@@ -242,6 +242,7 @@ body {
     -webkit-transition-delay: 100ms;
     transition-delay: 100ms;
   }
+  
    
   [tooltip]:before {
     font-family: 'Nunito';
@@ -280,6 +281,11 @@ body {
   .sbutton.call {
     background: #00e676;
   }
+  .sbutton.mainsbutton {
+    background: rgb(157, 150, 150);
+  }
+
+  
   /* book online section */
   #bookingform >.columnb{
     display: flex;
