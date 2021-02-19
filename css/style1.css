@@ -128,6 +128,8 @@ body {
 
 }
 
+
+
 .aboutContant .margin, p{
  margin-bottom: 30px;
 }
@@ -243,6 +245,10 @@ body {
     transition-delay: 100ms;
   }
   
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 76e2f2cb5ad20c75735789e0bcce5ee2a5f49cf7
    
   [tooltip]:before {
     font-family: 'Nunito';
@@ -281,11 +287,17 @@ body {
   .sbutton.call {
     background: #00e676;
   }
+<<<<<<< HEAD
   .sbutton.mainsbutton {
     background: rgb(157, 150, 150);
   }
 
   
+=======
+.sbutton.mainsbutton{
+	background: grey;
+}
+>>>>>>> 76e2f2cb5ad20c75735789e0bcce5ee2a5f49cf7
   /* book online section */
   #bookingform >.columnb{
     display: flex;
