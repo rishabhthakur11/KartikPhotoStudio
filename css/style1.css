@@ -128,9 +128,7 @@ body {
 
 }
 
-.fa-bell {
-  color: 	#B0B0B0;  
-}
+
 
 .aboutContant .margin, p{
  margin-bottom: 30px;
@@ -246,12 +244,7 @@ body {
     -webkit-transition-delay: 100ms;
     transition-delay: 100ms;
   }
-  .mainsbutton {
-    background-color: darkblue;
-  }
-  .fa-bell {
-    color: 	whitesmoke;  
-  }
+  
   
    
   [tooltip]:before {
@@ -291,6 +284,9 @@ body {
   .sbutton.call {
     background: #00e676;
   }
+.sbutton.mainsbutton{
+	background: grey;
+}
   /* book online section */
   #bookingform >.columnb{
     display: flex;
